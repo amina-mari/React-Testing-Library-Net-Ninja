@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
-import FollowersList from '../FollowersList'
-import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom';
+import { render, screen, fireEvent } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom';
+import FollowersList from "../FollowersList";
 
 const MockFollowersList = () => {
     return (
@@ -13,6 +13,7 @@ const MockFollowersList = () => {
 describe("FollowersList", () => {
 
     beforeEach(() => {
+
         console.log("RUNNING BEFORE EACH TEST")
     })
 
@@ -32,5 +33,4 @@ describe("FollowersList", () => {
         const followerDivElements = await screen.findAllByTestId(/follower-item/i);
         expect(followerDivElements.length).toBe(1);
     });
-
 })

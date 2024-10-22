@@ -10,11 +10,11 @@ const MockTodo = () => {
 
 const addTask = (tasks) => {
     const inputElement = screen.getByPlaceholderText(/Add a new task here.../i);
-        const buttonElement = screen.getByRole("button", {name: /Add/i});
-        tasks.forEach((task) => {
-            fireEvent.change(inputElement, {target: {value: task}})
-            fireEvent.click(buttonElement);  
-        })
+    const buttonElement = screen.getByRole("button", {name: /Add/i});
+    tasks.forEach((task) => {
+        fireEvent.change(inputElement, {target: {value: task}})
+        fireEvent.click(buttonElement);  
+    })
 }
 
 describe("ToDo", () => {
