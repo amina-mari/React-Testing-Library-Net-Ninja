@@ -7,7 +7,7 @@ const mockResponse = {
                     last: "Harb"
                 },
                 picture: {
-                    large: "https://randomuser.me/api/portraits/men/59.jpg"
+                    large: "https://randomuser.me/api/portraits/men/83.jpg"
                 },
                 login: {
                     username: "ThePhonyGOAT"
